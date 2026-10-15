@@ -1,0 +1,11 @@
+﻿zone "long90.cn" IN {
+    type master;
+    file "long90.cn.zone";
+    allow-update { none; };
+};
+
+zone "10.168.192.in-addr.arpa" IN {
+    type master;
+    file "1.10.168.192.zone";
+    allow-update { none; };
+};

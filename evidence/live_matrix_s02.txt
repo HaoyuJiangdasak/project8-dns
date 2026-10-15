@@ -1,0 +1,12 @@
+﻿==== S02 ====
+www.long90.cn.		86395	IN	A	192.168.10.4
+long90.cn.		86395	IN	MX	10 mail.long90.cn.
+dns.long90.cn.		86400	IN	A	192.168.10.1
+4.10.168.192.in-addr.arpa. 86400 IN	PTR	www.long90.cn.
+active
+cockpit dhcpv6-client dns ssh
+    listen-on port 53 { any; };
+    listen-on-v6 port 53 { none; };
+    allow-query { any; };
+    forwarders { 192.168.10.1; };
+    forward only;

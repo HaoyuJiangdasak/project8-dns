@@ -1,0 +1,10 @@
+﻿nameserver 192.168.10.1
+nameserver 192.168.10.2
+search project8.lab
+192.168.10.1
+192.168.10.1
+Server01.project8.lab.
+192.168.10.1
+192.168.10.11
+Client1.project8.lab.
+C1_ACCEPT

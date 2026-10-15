@@ -1,0 +1,16 @@
+﻿success
+plink.exe : Warning: ALREADY_ENABLED: dns
+所在位置 C:\Users\Lenovo\AppData\Local\Temp\ps-script-d1b6ebe5-d4cd-4cb4-b1ce-93e2fba89efe.ps1:103 字符: 7
++ $s2 = & $plink -ssh -hostkey $hk2 -pw <REDACTED> -batch root@192.168.10.2 ...
++       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning: ALREADY_ENABLED: dns:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+success
+192.168.10.1
+192.168.10.1
+BIND_CACHE_OK
+192.168.10.1
+192.168.10.1
+Server01.project8.lab.
+S2_DONE

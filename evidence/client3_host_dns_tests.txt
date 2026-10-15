@@ -1,0 +1,8 @@
+﻿OK Server01.project8.lab @192.168.10.1 A => 192.168.10.1,Server01.project8.lab,Server02.project8.lab,192.168.10.2
+OK www.project8.lab @192.168.10.1 A => 192.168.10.1,Server02.project8.lab,Server01.project8.lab,192.168.10.1,192.168.10.2
+OK Client1.project8.lab @192.168.10.1 A => 192.168.10.11,Server01.project8.lab,Server02.project8.lab,192.168.10.1,192.168.10.2
+OK 1.10.168.192.in-addr.arpa @192.168.10.1 PTR => Server01.project8.lab,Server01.project8.lab,Server02.project8.lab,192.168.10.1,192.168.10.2
+OK 11.10.168.192.in-addr.arpa @192.168.10.1 PTR => Client1.project8.lab,Server01.project8.lab,Server02.project8.lab,192.168.10.1,192.168.10.2
+OK Server01.project8.lab @192.168.10.2 A => 192.168.10.1,Server01.project8.lab,Server02.project8.lab,192.168.10.2
+OK www.project8.lab @192.168.10.2 A => 192.168.10.1,Server02.project8.lab,Server01.project8.lab,192.168.10.2,192.168.10.1
+OK Client1.project8.lab @192.168.10.2 A => 192.168.10.11,Server02.project8.lab,Server01.project8.lab,192.168.10.2,192.168.10.1

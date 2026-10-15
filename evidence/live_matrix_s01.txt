@@ -1,0 +1,46 @@
+﻿==== S01 DIG MATRIX ====
+--- dig @dns.long90.cn ---
+dns.long90.cn.		86400	IN	A	192.168.10.1
+long90.cn.		86400	IN	NS	dns.long90.cn.
+--- dig @mail.long90.cn ---
+mail.long90.cn.		86400	IN	A	192.168.10.2
+long90.cn.		86400	IN	NS	dns.long90.cn.
+--- dig @slave.long90.cn ---
+slave.long90.cn.	86400	IN	A	192.168.10.3
+long90.cn.		86400	IN	NS	dns.long90.cn.
+--- dig @www.long90.cn ---
+www.long90.cn.		86400	IN	A	192.168.10.4
+long90.cn.		86400	IN	NS	dns.long90.cn.
+--- dig @ftp.long90.cn ---
+ftp.long90.cn.		86400	IN	A	192.168.10.5
+long90.cn.		86400	IN	NS	dns.long90.cn.
+--- dig @web.long90.cn ---
+web.long90.cn.		86400	IN	CNAME	www.long90.cn.
+long90.cn.		86400	IN	NS	dns.long90.cn.
+--- dig @long90.cn ---
+long90.cn.		86400	IN	NS	dns.long90.cn.
+--- dig @long90.cn ---
+long90.cn.		86400	IN	MX	10 mail.long90.cn.
+long90.cn.		86400	IN	NS	dns.long90.cn.
+--- dig @long90.cn ---
+long90.cn.		86400	IN	SOA	dns.long90.cn. root.long90.cn. 2026101402 86400 3600 604800 10800
+long90.cn.		86400	IN	NS	dns.long90.cn.
+==== S01 PTR ====
+1.10.168.192.in-addr.arpa. 86400 IN	PTR	dns.long90.cn.
+2.10.168.192.in-addr.arpa. 86400 IN	PTR	mail.long90.cn.
+3.10.168.192.in-addr.arpa. 86400 IN	PTR	slave.long90.cn.
+4.10.168.192.in-addr.arpa. 86400 IN	PTR	www.long90.cn.
+5.10.168.192.in-addr.arpa. 86400 IN	PTR	ftp.long90.cn.
+==== S02 FORWARD ====
+www.long90.cn.		86400	IN	A	192.168.10.4
+long90.cn.		86400	IN	MX	10 mail.long90.cn.
+web.long90.cn.		86400	IN	CNAME	www.long90.cn.
+www.long90.cn.		86400	IN	A	192.168.10.4
+==== CHECK ====
+zone long90.cn/IN: loaded serial 2026101402
+OK
+zone 10.168.192.in-addr.arpa/IN: 10.168.192.in-addr.arpa/MX 'mail.long90.cn' (out of zone) has no addresses records (A or AAAA)
+zone 10.168.192.in-addr.arpa/IN: loaded serial 2026101402
+OK
+active
+cockpit dhcpv6-client dns ssh

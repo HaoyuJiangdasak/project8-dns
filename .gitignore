@@ -1,0 +1,30 @@
+# VMware and installer artifacts (the working directory contains multi-GB files)
+VM/
+ISO/
+VMware/
+*.vmdk
+*.vmem
+*.vmss
+*.nvram
+*.vmsd
+*.vmx
+*.vmxf
+*.iso
+*.exe
+*.log
+
+# Local secrets and host-only state
+.env
+.env.*
+*.pem
+*.key
+*_credentials.*
+*credentials*
+*hostkeys*
+secrets/
+
+# Tool/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
